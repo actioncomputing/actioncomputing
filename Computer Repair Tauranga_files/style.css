@@ -4373,7 +4373,7 @@ color: #fff;
 
 .maps-margin{
 	margin-top: 50px;	
-		position: relative;
+	position: relative;
 }
 
 .content-body{
@@ -4383,73 +4383,64 @@ color: #fff;
 
 
 .cable {
-max-height: 500px;
-float: right;
-position: absolute;
-top: -500px;
-right: 0;
-z-index: 4;
+	min-height: 500px;
+	float: right;
+	/* position: absolute; */
+	margin-top: -500px;
+	right: 0;
+	z-index: 4;
 }
 .maps-background{
-	background-image:url(https://web.archive.org/web/20190115023516im_/http://actioncomputing.co.nz/wp-content/uploads/2014/11/shade.png);
+	/* background-image:url(https://web.archive.org/web/20190115023516im_/http://actioncomputing.co.nz/wp-content/uploads/2014/11/shade.png);
 	background-position:top;
 	background-size: 100% auto;
 
-	background-color: #1DA889;
+	background-color: #1DA889; */
 }
 
 .services .maps-background {
-background-image: url(https://web.archive.org/web/20190115023516im_/http://actioncomputing.co.nz/wp-content/uploads/2014/11/shade.png);
+/* background-image: url(https://web.archive.org/web/20190115023516im_/http://actioncomputing.co.nz/wp-content/uploads/2014/11/shade.png);
 background-position: top;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 }
 
 .services ul{
-   
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
 
--webkit-margin-before: 0em;
--webkit-margin-after: 0em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;
--webkit-padding-start: 0px;
+ 	color:white;
+	margin-top:20px;
+	margin-bottom:20px;
+	display: block;
 
- color:white;
-    margin-top:20px;
-        margin-bottom:20px;
-
-    
-    display: block;
 }
 
 
-.maps-background h1{
-
-font-size: 27px;
-font-weight: 200;
-line-height: 44px;
-display: block;
-color: white;
-margin: 10px 0 10px;
+.maps-background h1 {
+	font-size: 27px;
+	font-weight: 200;
+	line-height: 44px;
+	display: block;
+	color: white;
+	margin: 10px 0 10px;
 }
 
 .services .maps-background h1{
-text-align: center;
-line-height: 27px;
-
-
+	text-align: center;
+	line-height: 27px;
 }
 .services .maps-background h1 div{
-padding-bottom:10px;
-
+	padding-bottom:10px;
 }
-
 
 .arrow_box {
-
 	position: relative;
-
 }
+
 .arrow_box:before {
 	bottom: 100%;
 	right: 0;
@@ -4512,12 +4503,15 @@ max-width: 100%;
 
 }
 
+header#masthead-new {
+	margin-top: 43px;
+}
+
 header h1{
-    font-size: 40px;
-font-weight: 200;
-line-height: 44px;
-display: block;
-text-align:center;
+	font-size: 40px;
+	line-height: 44px;
+	display: block;
+	text-align:center;
 }
 
 header h2{
@@ -4606,3 +4600,17 @@ playback timings (ms):
   load_resource: 87.584
   exclusion.robots: 0.183
 */
+
+
+@media (max-width: 767px) {
+	.service-cols {
+		margin-bottom: 40px;
+	}
+
+	.service-col ul {
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+    list-style: none;
+	}
+}
